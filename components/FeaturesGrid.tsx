@@ -3,7 +3,11 @@ import { FEATURES } from '../constants';
 import FeatureCard from './FeatureCard';
 import type { Feature } from '../types';
 
-const FeaturesGrid: React.FC = () => {
+interface FeaturesGridProps {
+  onFeatureSelect: (feature: Feature) => void;
+}
+
+const FeaturesGrid: React.FC<FeaturesGridProps> = ({ onFeatureSelect }) => {
   return (
     <section id="features" className="py-16 sm:py-24">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -22,6 +26,7 @@ const FeaturesGrid: React.FC = () => {
               icon={feature.icon}
               title={feature.title}
               description={feature.description}
+              onClick={() => onFeatureSelect(feature)}
             />
           ))}
         </div>

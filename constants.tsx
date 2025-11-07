@@ -53,7 +53,7 @@ const RocketIcon = () => (
 
 const TargetIcon = () => (
     <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M10.343 3.94c.09-.542.56-.94 1.11-.94h1.093c.55 0 1.02.398 1.11.94l.149.894c.07.424.384.764.78.93.398.164.855.142 1.205-.108l.737-.527c.44-.314.989-.227 1.32.148l.788.894c.33.374.394.904.148 1.32l-.527.737c-.25.35-.272.806-.108 1.204.166.397.506.71.93.78l.894.149c.542.09.94.56.94 1.11v1.093c0 .55-.398 1.02-.94 1.11l-.894.149c-.424.07-.764.383-.93.78-.164.398-.142.854.108 1.204l.527.738c.314.44.227.988-.148 1.32l-.894.788c-.374.33-.904.394-1.32.148l-.737-.527c-.35-.25-.806-.272-1.204-.108-.397.166-.71.506-.78.93l-.149.894c-.09.542-.56.94-1.11.94h-1.093c-.55 0-1.02-.398-1.11-.94l-.149-.894c-.07-.424-.384-.764-.78-.93-.398-.164-.855-.142-1.205.108l-.737.527c-.44.314-.989.227-1.32-.148l-.788-.894c-.33-.374-.394-.904-.148-1.32l.527-.737c.25-.35.272-.806.108-1.204-.166-.397-.506-.71-.93-.78l-.894-.149c-.542-.09-.94-.56-.94-1.11v-1.093c0-.55.398-1.02.94-1.11l.894-.149c.424-.07.764-.383.93-.78.164-.398.142-.854-.108-1.204l-.527-.738c-.314-.44-.227-.988.148-1.32l.894-.788c.374-.33.904-.394 1.32-.148l.737.527c.35.25.806.272 1.204.108.397-.166.71-.506.78-.93l.149-.894z" />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M10.343 3.94c.09-.542.56-.94 1.11-.94h1.093c.55 0 1.02.398 1.11.94l.149.894c.07.424.384.764.78.93.398.164.855.142 1.205-.108l.737-.527c.44-.314.989-.227 1.32.148l.788.894c.33.374.394.904.148 1.32l-.527.737c-.25.35-.272.806-.108 1.204.166.397.506.71.93.78l.894.149c.542.09.94.56.94 1.11v1.093c0 .55-.398 1.02-.94 1.11l-.894.149c-.424.07-.764.383-.93.78-.164.398-.142.854.108 1.204l.527.738c.314.44.227.988-.148 1.32l-.894.788c-.374.33-.904.394-1.32.148l-.737-.527c-.35-.25-.806-.272-1.204-.108-.397.166-.71.506-.78.93l-.149.894c-.09.542-.56.94-1.11.94h-1.093c-.55 0-1.02-.398-1.11-.94l-.149-.894c-.07-.424-.384-.764-.78-.93-.398-.164-.855-.142-1.205.108l-.737.527c-.44.314-.989.227-1.32-.148l-.788-.894c-.33-.374-.394-.904-.148-1.32l.527-.737c.25-.35.272-.806.108-1.204-.166-.397-.506-.71-.93-.78l-.894-.149c-.542-.09-.94-.56-.94-1.11v-1.093c0-.55.398-1.02.94-1.11l.894-.149c.424-.07.764-.383.93-.78.164-.398.142-.854-.108-1.204l-.527-.738c-.314-.44-.227-.988.148-1.32l.894-.788c.374-.33.904-.394 1.32-.148l.737.527c.35.25.806-.272 1.204.108.397-.166.71-.506.78-.93l.149-.894z" />
         <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
     </svg>
 );
@@ -79,6 +79,31 @@ const SmileIcon = () => (
 const MobileIcon = () => (
     <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+    </svg>
+);
+
+const TagIcon = () => (
+    <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z" />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M6 6h.008v.008H6V6z" />
+    </svg>
+);
+
+const CurrencyDollarIcon = () => (
+    <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 11.21 12.768 11 12 11c-.768 0-1.536.21-2.121.621L9 12.232m0 0L6.879 14.38a2.25 2.25 0 00-.621 1.562V18m0-3.618v.003c0 .814.662 1.477 1.477 1.477h1.445a.75.75 0 00.53-.22l2.34-2.34a.75.75 0 000-1.06l-2.34-2.34a.75.75 0 00-1.06 0l-2.34 2.34a.75.75 0 00-.22.53v1.445c0 .206.035.408.104.602z" />
+    </svg>
+);
+
+const DocumentTextIcon = () => (
+    <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625a3.375 3.375 0 00-3.375 3.375v11.25a3.375 3.375 0 003.375 3.375h9.75a3.375 3.375 0 003.375-3.375V9.75" />
+    </svg>
+);
+
+const VideoCameraIcon = () => (
+    <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25h-9A2.25 2.25 0 002.25 7.5v9a2.25 2.25 0 002.25 2.25z" />
     </svg>
 );
 
@@ -148,5 +173,25 @@ export const FEATURES: Feature[] = [
     icon: <MobileIcon />,
     title: "Gerador de Imagens para Stories",
     description: "Envie um produto, descreva um cenário e deixe a IA fazer a mágica para criar visuais incríveis.",
+  },
+  {
+    icon: <TagIcon />,
+    title: "Gerador de Nomes e Slogans",
+    description: "Crie nomes e slogans memoráveis com base em seu público. Inclui análise de disponibilidade de domínio.",
+  },
+  {
+    icon: <CurrencyDollarIcon />,
+    title: "Preço Dinâmico com IA",
+    description: "Simule preços ideais com base em custos, concorrência e demanda, com monitoramento em tempo real.",
+  },
+  {
+    icon: <DocumentTextIcon />,
+    title: "Conteúdo para Blogs e Redes Sociais",
+    description: "Produza artigos e posts otimizados para SEO e engajamento em blogs e redes sociais automaticamente.",
+  },
+  {
+    icon: <VideoCameraIcon />,
+    title: "Roteirista de Lives com IA",
+    description: "Crie scripts detalhados para lives de lançamento, com timing, interações e prompts para engajar sua audiência.",
   }
 ];
