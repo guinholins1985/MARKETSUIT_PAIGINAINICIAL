@@ -5,4 +5,5 @@ export interface Feature {
   title: string;
   description: string;
   pro?: boolean;
+  component?: React.FC;
 }

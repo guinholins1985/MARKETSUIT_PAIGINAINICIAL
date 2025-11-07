@@ -1,5 +1,7 @@
 import React from 'react';
 import type { Feature } from './types';
+import CaptionGenerator from './components/modules/CaptionGenerator';
+import GoogleShoppingAdGenerator from './components/modules/GoogleShoppingAdGenerator';
 
 const CubeIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
@@ -53,7 +55,7 @@ const RocketIcon = () => (
 
 const TargetIcon = () => (
     <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M10.343 3.94c.09-.542.56-.94 1.11-.94h1.093c.55 0 1.02.398 1.11.94l.149.894c.07.424.384.764.78.93.398.164.855.142 1.205-.108l.737-.527c.44-.314.989-.227 1.32.148l.788.894c.33.374.394.904.148 1.32l-.527.737c-.25.35-.272.806-.108 1.204.166.397.506.71.93.78l.894.149c.542.09.94.56.94 1.11v1.093c0 .55-.398 1.02-.94 1.11l-.894.149c-.424.07-.764.383-.93.78-.164.398-.142.854.108 1.204l.527.738c.314.44.227.988-.148 1.32l-.894.788c-.374.33-.904.394-1.32.148l-.737-.527c-.35-.25-.806-.272-1.204-.108-.397.166-.71.506-.78.93l-.149.894c-.09.542-.56.94-1.11.94h-1.093c-.55 0-1.02-.398-1.11-.94l-.149-.894c-.07-.424-.384-.764-.78-.93-.398-.164-.855-.142-1.205.108l-.737.527c-.44.314-.989.227-1.32-.148l-.788-.894c-.33-.374-.394-.904-.148-1.32l.527-.737c.25-.35.272-.806.108-1.204-.166-.397-.506-.71-.93-.78l-.894-.149c-.542-.09-.94-.56-.94-1.11v-1.093c0-.55.398-1.02.94-1.11l.894-.149c.424-.07.764-.383.93-.78.164-.398.142-.854-.108-1.204l-.527-.738c-.314-.44-.227-.988.148-1.32l.894-.788c.374-.33.904-.394 1.32-.148l.737.527c.35.25.806-.272 1.204.108.397-.166.71-.506.78-.93l.149-.894z" />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M10.343 3.94c.09-.542.56-.94 1.11-.94h1.093c.55 0 1.02.398 1.11.94l.149.894c.07.424.384.764.78.93.398.164.855.142 1.205-.108l.737-.527c.44-.314.989-.227 1.32.148l.788.894c.33.374.394.904.148 1.32l-.527.737c-.25.35-.272.806-.108 1.204.166.397.506.71.93.78l.894.149c.542.09.94.56.94 1.11v1.093c0 .55-.398 1.02-.94 1.11l-.894.149c-.424.07-.764.383-.93.78-.164.398-.142.854.108 1.204l.527.738c.314.44.227.988-.148 1.32l-.894.788c-.374.33-.904.394-1.32.148l-.737-.527c-.35-.25-.806-.272-1.204-.108-.397.166-.71.506-.78.93l-.149.894c-.09.542-.56.94-1.11.94h-1.093c-.55 0-1.02-.398-1.11-.94l-.149-.894c-.07-.424-.384-.764-.78-.93-.398-.164-.855-.142-1.205.108l-.737.527c-.44.314-.989.227-1.32-.148l-.788-.894c-.33-.374-.394-.904-.148-1.32l.527-.737c.25-.35.272.806.108-1.204-.166-.397-.506-.71-.93-.78l-.894-.149c-.542-.09-.94-.56-.94-1.11v-1.093c0 .55.398-1.02.94-1.11l.894-.149c.424-.07.764-.383.93-.78.164-.398.142-.854-.108-1.204l-.527-.738c-.314.44-.227-.988.148-1.32l.894-.788c.374-.33.904-.394 1.32-.148l.737.527c.35.25.806-.272 1.204.108.397-.166.71-.506.78-.93l.149-.894z" />
         <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
     </svg>
 );
@@ -107,6 +109,19 @@ const VideoCameraIcon = () => (
     </svg>
 );
 
+const TicketIcon = () => (
+    <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 6v.75m0 3v.75m0 3v.75m0 3V18m-9-5.25h5.25M7.5 15h3M3.375 5.25c-.621 0-1.125.504-1.125 1.125v3.026a2.999 2.999 0 010 5.198v3.026c0 .621.504 1.125 1.125 1.125h17.25c.621 0 1.125-.504 1.125-1.125v-3.026a2.999 2.999 0 010-5.198V6.375c0-.621-.504-1.125-1.125-1.125H3.375Z" />
+    </svg>
+);
+
+const ShoppingCartIcon = () => (
+    <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c.51 0 .962-.343 1.087-.835l1.823-6.836A1.125 1.125 0 0018.028 4.5H4.23z" />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3H4.875c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125h15c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H7.5m3-9h.008v.008H10.5v-.008zm4.5 0h.008v.008H15v-.008z" />
+    </svg>
+);
+
 
 export const FEATURES: Feature[] = [
   {
@@ -128,6 +143,7 @@ export const FEATURES: Feature[] = [
     icon: <PencilIcon />,
     title: "Impulso Criativo: Gerador de Legendas",
     description: "Descreva o seu post, escolha as redes sociais e deixe a IA criar legendas perfeitas para você.",
+    component: CaptionGenerator,
   },
   {
     icon: <WandIcon />,
@@ -160,6 +176,12 @@ export const FEATURES: Feature[] = [
     description: "Crie textos de anúncios de alta conversão para Google Ads e Meta Ads em segundos.",
   },
   {
+    icon: <ShoppingCartIcon />,
+    title: "Gerador de Anúncios Google Shopping",
+    description: "Crie títulos, descrições e palavras-chave otimizadas para seus produtos no Google Shopping.",
+    component: GoogleShoppingAdGenerator,
+  },
+  {
     icon: <ChartBarIcon />,
     title: "Gerador de Infográficos com IA",
     description: "Cole a URL de um produto e deixe a IA criar um infográfico de benefícios impressionante.",
@@ -173,6 +195,11 @@ export const FEATURES: Feature[] = [
     icon: <MobileIcon />,
     title: "Gerador de Imagens para Stories",
     description: "Envie um produto, descreva um cenário e deixe a IA fazer a mágica para criar visuais incríveis.",
+  },
+  {
+    icon: <TicketIcon />,
+    title: "Gerador de Cupom de Desconto",
+    description: "Crie, gerencie e valide cupons de desconto para suas campanhas.",
   },
   {
     icon: <TagIcon />,

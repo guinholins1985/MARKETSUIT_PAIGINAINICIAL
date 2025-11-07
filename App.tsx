@@ -19,11 +19,10 @@ const App: React.FC = () => {
   };
 
   if (selectedFeature) {
-    const ModuleComponent = <p className="text-center text-medium-text bg-light-bg/50 border border-slate-700 rounded-xl p-8">Este módulo ainda não foi implementado.</p>;
-
+    const ModuleComponent = selectedFeature.component;
     return (
         <ModuleWrapper feature={selectedFeature} onBack={handleBack}>
-            {ModuleComponent}
+            {ModuleComponent ? <ModuleComponent /> : <p className="text-center text-medium-text bg-light-bg/50 border border-slate-700 rounded-xl p-8">Este módulo ainda não foi implementado.</p>}
         </ModuleWrapper>
     );
   }
@@ -32,7 +31,7 @@ const App: React.FC = () => {
     <div className="min-h-screen bg-dark-bg text-light-text font-sans antialiased relative overflow-x-hidden">
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-dark-bg via-slate-900 to-black"></div>
       <div className="absolute top-0 left-[-20%] w-[50%] h-[50%] bg-primary/10 rounded-full blur-3xl filter animate-float"></div>
-      <div className="absolute bottom-0 right-[-20%] w-[50%] h-[50%] bg-secondary/10 rounded-full blur-3xl filter animate-float animation-delay-3000"></div>
+      <div className="absolute bottom-0 right-[-20%] w-[50%] h-[50%] bg-secondary/10 rounded-full blur-3xl filter animate-float [animation-delay:3s]"></div>
       
       <div className="relative z-10 flex flex-col min-h-screen">
         <Header />
